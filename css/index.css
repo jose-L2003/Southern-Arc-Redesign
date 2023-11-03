@@ -27,7 +27,7 @@ body {
     justify-content: center;
 }
 .navbar a:hover {
-    opacity: .7;
+    opacity: .8;
 }
 .navbar li {
     display: inline;
@@ -50,6 +50,10 @@ body {
 #contactbutton a {
     color: crimson;
 }
+#contactbutton:hover {
+    transform: scale(1.08);
+    transition: all .5s ease;
+}
 
 /* BANNER */
 * {
@@ -59,26 +63,26 @@ body {
 }
 .container {
     padding-top: 90px;
-    background-image: url(/images/welderbackground.jpg);
+    background-image: url(../images/welderbackground.jpg);
     background-size: cover;
     background-position-y: center;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 /* GOOGLE REVIEWS & CONTAINER */
-.box{
+.box {
     background-color: crimson;
+    margin: 0 auto;
     width: 20%;
+    max-width: 60rem;
+    padding: 4rem 0;
     margin: 2%;
     border-radius: 20px;
-}
-.boxImage1 {
-    background-color: rgb(255, 255, 255);
-    height: 60vh;
-    border-radius: 20px 20px 20px 20px;
+    text-align: center;
 }
 .googleicon {
-    max-width: 90px;
+    max-width: 30%;
     margin: auto;
     display: block;
     padding: 30px 1px;
@@ -86,20 +90,13 @@ body {
 .googleicon:hover {
     opacity: .7;
 }
-.boxImage1 h1, p {
-    margin-left: auto;
-    margin-right: auto;
-    margin: 5px;
-    display: flex;
-    justify-content: center;
-}
 /* SLIDESHOW */
 .slideShowContainer {
     padding: 2rem;
 }
 .slider-wrapper {
     position: relative;
-    max-width: 40rem;
+    max-width: 50rem;
     margin: 0 auto;
 }
 .slider {
@@ -109,12 +106,40 @@ body {
     scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
     box-shadow: 0 1.5rem 3rem -0.75 hsla(0, 0, 0, .25);
+    border: 15px solid rgb(33, 33, 33);
     border-radius: 25px;
 }
 .slider img {
     flex: 1 0 100%;     /* TELLS IMG HOW TO BEHAVE. 1=EQUAL SIZE 0=RETAIN WIDTH, NO WRAP 100%=TAKES UPS ENTURE PARENT CONTAINER */
     scroll-snap-align: start;
     object-fit: cover;
+    animation: slide 16s infinite;
+}
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+    25% {
+        transform: translateX(0);
+    }
+    30% {
+        transform: translateX(-100%);
+    }
+    50% {
+        transform: translateX(-100%);
+    }
+    55% {
+        transform: translateX(-200%);
+    }
+    75% {
+        transform: translateX(-200%);
+    }
+    80% {
+        transform: translateX(-300%);
+    }
+    100% {
+        transform: translateX(-300%);
+    }
 }
 .slider-nav {
     display: flex;
@@ -136,53 +161,82 @@ body {
 .slider-nav a:hover {
     opacity: 1;
 }
-/* HAVE US CALL YOU */
-.boxImage2 h1 {
-    display: block;
-    justify-content: center;
+/* RIGHT BOX/HAVE US CALL YOU */
+form{
+    background-color: crimson;
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+.full-width {
+    grid-column: span 2;
+}
+/* ABOUT US */
+.aboutus {
+    background-color: aliceblue;
+    display: flex;
+    justify-content: space-between;
+}
+.aboutus h2 {
     text-align: center;
-    margin-top: 3%;
+    padding: 20px;
 }
-.boxImage2 label, input {
-    display: block;
-    justify-content: center;
-    align-items: center;
-    margin-left: 7rem;
-    margin-top: 8%;
+.aboutus p {
+    text-align: center;
+    padding: 20px;
 }
-.boxImage2 label {
-    font-weight: 600;
+.shopimage {
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
 
 }
-.boxImage2 input {
-    border: none;
-    border-radius: 0px;
-}
-/* ABOUT US/OUR SERVICES */
+/* SERVICES */
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 .aboutContainer {
-    background-color: rgb(33, 33, 33);
-    background-size: cover;
-    background-position-y: center;
     display: flex;
     justify-content: center;
+    padding: 25px;
 }
 .card {
-    background-color: white;
-    display: flex;
+    background-color: crimson;
     margin: 20px;
-    height: 400px;
+    height: 500px;
     width: 400px;
+    border-radius: 15px;
 }
-.cardImg {
-    background-color: rgb(60, 255, 0);
-    height: 150px;
-    margin-bottom: 10px;
+.card-image {
+    background-color: crimson;
+    height: 300px;
+    margin-bottom: 15px;
+    background-size: cover;
+    background-position-y: center;
+    border-radius: 15px 15px 0 0;
 }
 .img1 {
-    background-image: url(/images/about-services/weldershowcase.webp);
+    background-image: url('/images/about-services/weldershowcase.webp');
+}
+.img2 {
+    background-image: url('/images/about-services/machinesets.webp');
+}
+.img3 {
+    background-image: url('/images/about-services/practicesets.webp');
+}
+.card p {
+    padding: 10px;
+    color: white;
+    text-align: center;;
+}
+.card h2 {
+    padding: 10px;
+    color: white;
+    text-align: center;
+}
+.card:hover {
+    background-color: rgb(207, 14, 14);
+    transform: scale(1.03);
+    transition: all 0.8s ease;
 }
