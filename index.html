@@ -8,32 +8,33 @@
     <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
-    <!--NAVBAR-->
-        <nav class="navbar">
-            <ul>
-                <div><li><a href ="#"> <img class="arcLogo" src="images/southernarcicon.webp" alt=""></a></li></div>
-                <div>
+<!--NAVBAR-->
+    <nav class="navbar">
+        <ul>
+            <li><a href ="#"> <img class="arcLogo" src="images/southernarcicon.webp" alt=""></a></li>
+            <div class="navbar-center">
                 <li><a href="#">Home</a></li>
-                <li><a href="services.html">Services</a></li>
+                <li><a href="#aboutContainer">Services</a></li>
                 <li><a href="#">Blog</a></li>
                 <li><a href="#">FAQ</a></li>
-                <li><button id="contactbutton"><a href="#contact">Contact Us</a></button></li>
+            </div>
+                <div class="navbar-right">
+                <li><button id="contactbutton"><a href="#contact-us">Contact Us</a></button></li>
                 </div>
-            </ul>
-        </nav>
+        </ul>
+    </nav>
     <!--LEFT BOX/GOOGLE RATINGS-->
     <section class="container">
     <div class="box">
         <div class="boxImage1">
                 <a href="https://www.google.com/search?channel=fenc&client=firefox-b-1-d&q=southern+arc+welding#lrd=0x8640a727ce82cc6d:0xb91ba91a85767758,1,,,," target="_blank"><img class="googleicon" src="images/googleicon.png" alt=""></a>
-            <div>
+        </div>
                 <h1>Google Rating</h1>
             <div class="googleRating">
                 <p>5.0</p>
                 <img src="images/stars.webp" alt="">
             </div>
             <p><a href="https://www.google.com/search?channel=fenc&client=firefox-b-1-d&q=southern+arc+welding#lrd=0x8640a727ce82cc6d:0xb91ba91a85767758,1,,,," target="_blank">Read our 101 reviews here</a></p>
-            </div>
             </div>
         </div>
         <!--CENTER SLIDER-->
@@ -52,32 +53,8 @@
                 <a href="#slide4"></a>
             </div>
         </div>
-    </section>
-        <!--RIGHT BOX/HAVE US CALL YOU-->
-        <form>
-            <div class="box">
-                <h1>Have us call you</h1>
-                <div>
-                    <label for="fullname">Full Name</label>
-                    <input id="fullname" type="text">
-                </div>
-                <div>
-                    <label for="phone">Phone number</label>
-                    <input id="phone" type="email">
-                </div>
-                <div>
-                    <label for="email">Email</label>
-                    <input id="email" type="text">
-                </div>
-                <div class="full-width">
-                    <label for="tellUs">Tell us a bit about you</label>
-                    <textarea id="tellUs"></textarea>
-                </div>
-                <div class="full-width">
-                    <button type="submit">Send</button>
-                </div>
-        </div>
-        </form>
+        </section>
+<!---->
     </section>
     <!--ABOUT US-->
     <section class="aboutus">
@@ -93,45 +70,102 @@
             <img class="shopimage" src="images/about-services/theshop.webp" alt="">
         </div>
     </section>
-    <!--OUR SERVICES-->
-        <section class="aboutContainer">
-        <div class="card">
-            <div class="card-image img1"></div>
-                <h2>One on One Welding Training</h2>
-                <p>Learn welding as a craft in a small-session environment</p>
-            </div>
-
+        <!--SERVICES/ARC ROAR-->
+        <section>
+            <div class="roar-box">
+                <iframe class="roar-image" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3462.3977009331393!2d-95.09146702466646!3d29.795052730344214!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8640a727ce82cc6d%3A0xb91ba91a85767758!2sSouthern%20Arc%20Welding%20School!5e0!3m2!1sen!2sus!4v1699041080133!5m2!1sen!2sus" width="450" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <img class="roar-image roar-image-lion" src="images/about-services/arcroar.webp" alt="">
+                <!--Show more-->
+                <div class="read-more-btn">
+                    <button onclick="myFunction()" id="myBtn">Show More</button>
+                </div>
+                <span id="more">
+                    <h3 class=" more-text more-text-header">
+                        Affordable Welder Training Options Tailored to You
+                    </h3>
+                    <p class="more-text">Southern Arc Welding Ltd. Co. offers various ways for you to pay for your welder training. From 3rd party educational loans, to pay as you go options and big discounts for paying up front, we guarantee you won't find a more affordable place to make a career out of welding. 
+            
+                        Classes start every week and are personalized to your needs, whether you are a beginner or advanced welder, we will get you where you need to be. 
+                    
+                        Let's make it happen.</p>
+                </span>
+                    <!--OUR SERVICES-->
+        <section id="aboutContainer">
             <div class="card">
-                <div class="card-image img2"></div>
-                <h2>Welding Machine Sales</h2>
-                <p>Our welding machines are inspected and ready to weld. Perfect for you to practice at home.</p>
-            </div>
-
+                <div class="card-image img1"></div>
+                    <h2>One on One Welding Training</h2>
+                    <p>Learn welding as a craft in a small-session environment</p>
+                </div>
+    
                 <div class="card">
-                    <div class="card-image img3"></div>
-                    <h2>Practice Sets</h2>
-                    <p>We sell and ship high quality plate and pipe practice coupon sets all over the country.</p>
+                    <div class="card-image img2"></div>
+                    <h2>Welding Machine Sales</h2>
+                    <p>Our welding machines are inspected and ready to weld. Perfect for you to practice at home.</p>
+                </div>
+    
+                    <div class="card">
+                        <div class="card-image img3"></div>
+                        <h2>Practice Sets</h2>
+                        <p>We sell and ship high quality plate and pipe practice coupon sets all over the country.</p>
+                    </div>
                 </div>
             </div>
+        </section>
+        </section>
+        <!--Bottom Section-->
+        <section class="call-us-wrapper">
+            <!--Contact Us-->
+            <div id="contact-us">
+                <div class="contact-box">
+                    <h4>Contact Us</h4>
+                    302 Magnolia St Channelview TX
+                    <p>832-966-6210</p>
+                    <a href="https://www.facebook.com/SouthernArcWeldingServices/"><img src="images/faceboo.webp" alt=""></a>
+                    <a href="https://www.instagram.com/southernarcwelders/"><img src="images/insta.webp" alt=""></a>
+                </div>
+            </div>
+        <!--Shop Hours-->
+        <div class="contact-box">
+            <div>
+                <h4>Shop Hours</h4>
+            </div>
+            <table>
+                <tr><th>Monday</th><td>7AM - 11AM / 6PM - 10PM</td></tr>
+                <tr><th>Tuesday</th><td>7AM - 11AM / 6PM - 10PM</td></tr>
+                <tr><th>Wednesday</th><td>7AM - 11AM / 6PM - 10PM</td></tr>
+                <tr><th>Thursday</th><td>7AM - 11AM / 6PM - 10PM</td></tr>
+                <tr><th>Friday</th><td>Appointment Only</td></tr>
+                <tr><th>Saturday & Sunday</th><td>Closed</td></tr>
+            </table>
         </div>
+            <!--Have Us Call You/Form-->
+            <form action="action_page.php">
+                <div class="contact-box">
+                    <div><img src="" alt=""></div> <!--Add icons?-->
+                    <h4>Have us call you</h4>
+                    <div>
+                        <label for="fullname">Full Name</label>
+                        <input id="fullname" type="text">
+                    </div>
+                    <div>
+                        <label for="phone">Phone number</label>
+                        <input id="phone" type="email">
+                    </div>
+                    <div>
+                        <label for="email">Email</label>
+                        <input id="email" type="text">
+                    </div>
+                    <div class="full-width">
+                        <label for="tellUs">Tell us a bit about you</label>
+                        <textarea id="tellUs"></textarea>
+                    </div>
+                    <div class="full-width">
+                        <button type="submit">Send</button>
+                    </div>
+                </div>
+            </form>
     </section>
-    <!--SERVICES/ARC ROAR-->
-    <section>
-        <div>
-            <img src="images/about-services/arcroar.webp" alt="">
-        </div>
-        <div>
-            <p>Southern Arc Welding Ltd. Co. offers various ways for you to pay for your welder training. From 3rd party educational loans, to pay as you go options and big discounts for paying up front, we guarantee you won't find a more affordable place to make a career out of welding. 
-    
-                Classes start every week and are personalized to your needs, whether you are a beginner or advanced welder, we will get you where you need to be. 
-            
-                Let's make it happen.</p>
-        </div>
-    </section>
-    <!--VISIT US/HAVE US CALL YOU-->
-    <section>
-
-    </section>
+    <script src="/js/index.js"></script>
 
 </body>
 </html>
