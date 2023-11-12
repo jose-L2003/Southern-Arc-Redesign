@@ -14,13 +14,15 @@ html {
     position: fixed;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    text-align: center;
     align-items: center;
     justify-content: space-between;
     padding: 5px 5%;
     list-style: none;
     z-index: 100;
     max-height: 110px;
+}
+.navbar-center {
+    text-align: center;
 }
 .navbar-center li {
     display: inline-block;
@@ -44,6 +46,7 @@ html {
 #contactbutton {
     border: none;
     height: 35px;
+    float: right;
 }
 #contactbutton a {
     color: #b91d25;
@@ -56,43 +59,51 @@ html {
     transform: scale(1.0);
     transition: all .5s ease;
 }
-/* Banner/Google Reviews */
+/* Hero */
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
-.container {
-    padding-top: 150px;
+.hero-wrapper {
     background-image: url(../images/welderbackground.jpg);
     background-size: cover;
     background-position-y: center;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 140px 0 30px 0;
 }
-.box {
+/* Form */
+.form-container {
     background-color: #b91d25;
+    border: 15px solid rgb(33, 33, 33); 
+    border-radius: 25px;
     margin: 0 auto;
-    width: 20%;
-    max-width: 60rem;
-    padding: 4rem 0;
-    margin: 2%;
-    border-radius: 20px;
-    text-align: center;
 }
-.googleicon {
-    max-width: 30%;
-    margin: auto;
-    display: block;
-    padding: 30px 1px;
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  input[type=submit] {
+  width: 100%;
+  background-color: rgb(255, 61, 100);
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
 }
-.googleicon:hover {
-    opacity: .7;
+input[type=submit]:hover {
+    background-color: #b91d25;
 }
-.googleRating a {
-    text-decoration: none;
-}
+
 /* SLIDESHOW */
 .slideShowContainer {
     padding: 2rem;
@@ -146,33 +157,12 @@ html {
         transform: translateX(-300%);
     }
 }
-/*
-.slider-nav {
-    display: flex;
-    column-gap: 1rem;
-    position: absolute;
-    bottom: 1.25rem;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 1;
-}
-.slider-nav a {
-    width: 0.5rem;
-    height: 0.5rem;
-    border-radius: 50%;
-    background-color: #fff;
-    opacity: 0.75;
-    transition: opacity ease 250ms;
-}
-.slider-nav a:hover {
-    opacity: 1;
-} */
 /* ABOUT US */
 .aboutus {
     background-color: #b91d25;
     display: flex;
     justify-content: space-between;
-    padding: 30px;
+    padding: 50px;
 }
 .aboutus h2 {
     color: white;
@@ -188,15 +178,26 @@ html {
     border: solid 15px rgb(33, 33, 33);
     border-radius: 15px;
     filter: drop-shadow(0 0 1.75rem black);
-
 }
-/* SERVICES */
+/* Services */
+.services-wrapper {
+    margin: auto;
+    align-items: center;
+    justify-content: space-between;
+    background-image: url('../images/welderbackground.jpg');
+    background-size: cover;
+    background-position: center;
+    max-width: 100%;
+    color: white;
+    padding: 50px;
+}
+/* 3 Cards*/
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
-#aboutContainer {
+#servicesContainer {
     display: flex;
     justify-content: center;
     padding: 25px;
@@ -240,20 +241,9 @@ html {
     transform: scale(1.03);
     transition: all 0.8s ease;
 }
-/* ARC ROAR */
-.roar-box {
-    margin: auto;
-    align-items: center;
-    justify-content: space-between;
-    background-image: url('../images/welderbackground.jpg');
-    background-size: cover;
-    background-position: center;
-    max-width: 100%;
-    color: white;
-}
+/* Map + Arc Roar*/
 .roar-image {
     padding: 25px;
-    margin: 15px;
 }
 .roar-image-lion {
     max-width: 60%;
@@ -299,7 +289,6 @@ html {
     justify-content: center;
     align-items: center;
     margin: auto;
-    margin: 1%;
     text-align: center;
 }
 /* Footer Section */
@@ -323,5 +312,29 @@ html {
 }
 .contact-box table, td {
     text-align: left;
+}
+/* Store.html */
+.shop-container {
+}
+.shop-card {
+    background-color: rgb(107, 64, 66);
+    max-height: 500px;
+    margin: 20px;
+}
+
+.shop-img1 {
+    background-image: url('../images/about-services/machinesets.webp');
+}
+.shop-img2 {
+    background-image: url('../images/about-services/machinesets.webp');
+}
+.shop-img3 {
+    background-image: url('../images/about-services/machinesets.webp');
+}
+.shop-img4 {
+    background-image: url('../images/about-services/machinesets.webp');
+}
+.shop-img5 {
+    background-image: url('../images/about-services/machinesets.webp');
 }
 

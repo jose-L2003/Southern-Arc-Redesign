@@ -5,17 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/webp" href="images/southernarcicon.webp">
     <title>Southern Arc</title>
+    <meta name="description" content="Learn to weld at Souther Arc">
     <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
 <!--NAVBAR-->
-    <nav class="navbar">
+<header class="navbar">
+    <nav>
         <ul>
             <li><a href ="#"> <img class="arcLogo" src="images/southernarcicon.webp" alt=""></a></li>
             <div class="navbar-center">
                 <li><a href="#">Home</a></li>
                 <li><a href="#aboutContainer">Services</a></li>
-                <li><a href="#">Blog</a></li>
+                <li><a href="store.html">Store</a></li>
                 <li><a href="#">FAQ</a></li>
             </div>
                 <div class="navbar-right">
@@ -23,20 +25,39 @@
                 </div>
         </ul>
     </nav>
-    <!--LEFT BOX/GOOGLE RATINGS-->
-    <section class="container">
-    <div class="box">
-        <div class="box-image1">
-                <a href="https://www.google.com/search?channel=fenc&client=firefox-b-1-d&q=southern+arc+welding#lrd=0x8640a727ce82cc6d:0xb91ba91a85767758,1,,,," target="_blank"><img class="googleicon" src="images/googleicon.png" alt=""></a>
-        </div>
-                <h1>Flip Cards Go Here</h1>
-                <p>(Shows qualified welders)</p>
-            <div class="googleRating">
-                <p>Have arrows on the sides to go forward and back, show more info on hover.</p>
-                <p><a href="https://www.w3schools.com/howto/howto_css_flip_card.asp" target="_blank">Example</a></p>
+</header>
+    <!--Hero-->
+    <!--Left Box-->
+    <section class="hero-wrapper">
+        <!--Form-->
+        <form action="customer-info.html" method="get">
+            <div class="form-container">
+                <h4 class="form-header">Have us call you</h4>
+                <div class="form-box">
+                    <label for="firstname">First Name</label>
+                    <input id="firstname" type="text" placeholder="Your First Name..." required>
+                </div>
+                <div>
+                    <label for="lastname">Last Name</label>
+                    <input id="lastname" type="text" placeholder="Your Last Name..." required>
+                </div>
+                <div class="form-box">
+                    <label for="phone">Phone number</label required>
+                    <input id="phone" type="tel">
+                </div>
+                <div class="form-box">
+                    <label for="email">Email</label>
+                    <input id="email" type="text" required>
+                </div>
+                <div class="form-box">
+                    <label for="tellUs">Message</label>
+                    <textarea id="tellUs" placeholder="Tell us a bit about you..."></textarea>
+                </div>
+                <div class="formbtn">
+                    <input type="submit" value="Submit">
+                </div>
             </div>
-            </div>
-        </div>
+        </form>
         <!--CENTER SLIDER-->
         <section class="slideShowContainer">
         <div class="slider-wrapper">
@@ -67,27 +88,15 @@
             <img class="shopimage" src="images/about-services/theshop.webp" alt="">
         </div>
     </section>
-        <!--SERVICES/ARC ROAR-->
-        <section>
-            <div class="roar-box">
-                <iframe class="roar-image" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3462.3977009331393!2d-95.09146702466646!3d29.795052730344214!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8640a727ce82cc6d%3A0xb91ba91a85767758!2sSouthern%20Arc%20Welding%20School!5e0!3m2!1sen!2sus!4v1699041080133!5m2!1sen!2sus" width="450" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                <img class="roar-image roar-image-lion" src="images/about-services/arcroar.webp" alt="">
-                <!--Show more-->
-                <div class="read-more-btn">
-                    <!-- <button onclick="myFunction()" id="myBtn">Show More</button> -->
-                </div>
-                <span id="more">
+        <!--SERVICES-->
+        <section class="services-wrapper">
                     <h3 class=" more-text more-text-header">
-                        Affordable Welder Training Options Tailored to You
+                        Services
                     </h3>
-                    <p class="more-text">Southern Arc Welding Ltd. Co. offers various ways for you to pay for your welder training. From 3rd party educational loans, to pay as you go options and big discounts for paying up front, we guarantee you won't find a more affordable place to make a career out of welding. 
-            
-                        Classes start every week and are personalized to your needs, whether you are a beginner or advanced welder, we will get you where you need to be. 
-                    
-                        Let's make it happen.</p>
-                </span>
+                    <p class="more-text">Southern Arc Welding Ltd. Co. offers various ways for you to pay for your welder training. From 3rd party educational loans, to pay as you go options and big discounts for paying up front, we guarantee you won't find a more affordable place to make a career out of welding. Classes start every week and are personalized to your needs, whether you are a beginner or advanced welder, we will get you where you need to be. Let's make it happen.
+                    </p>
                     <!--3 Cards-->
-        <section id="aboutContainer">
+        <section id="servicesContainer">
             <div class="card">
                 <div class="card-image img1"></div>
                     <h2>One-on-One Welding Training</h2>
@@ -105,9 +114,13 @@
                         <h2>Practice Sets</h2>
                         <p>We sell and ship high quality plate and pipe practice coupon sets all over the country.</p>
                     </div>
-                </div>
             </div>
         </section>
+        <!--Map + Arc Roar-->
+        <div>
+            <iframe class="roar-image" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3462.3977009331393!2d-95.09146702466646!3d29.795052730344214!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8640a727ce82cc6d%3A0xb91ba91a85767758!2sSouthern%20Arc%20Welding%20School!5e0!3m2!1sen!2sus!4v1699041080133!5m2!1sen!2sus" width="450" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <img class="roar-image roar-image-lion" src="images/about-services/arcroar.webp" alt="">
+        </div>
         </section>
         <!--Footer Section-->
         <footer>
@@ -138,32 +151,7 @@
                     <tr><th>Saturday & Sunday</th><td>Closed</td></tr>
                 </table>
             </div>
-                <!--Have Us Call You/Form-->
-                <form action="action_page.php">
-                    <div class="contact-box">
-                        <div><img src="" alt=""></div> <!--Add icons?-->
-                        <h4 class="contact-header">Have us call you</h4>
-                        <div>
-                            <label for="fullname">Your Name...</label>
-                            <input id="fullname" type="text" placeholder="Full Name">
-                        </div>
-                        <div>
-                            <label for="phone">Phone number</label>
-                            <input id="phone" type="email">
-                        </div>
-                        <div>
-                            <label for="email">Email</label>
-                            <input id="email" type="text">
-                        </div>
-                        <div class="full-width">
-                            <label for="tellUs">Tell us a bit about you</label>
-                            <textarea id="tellUs"></textarea>
-                        </div>
-                        <div class="full-width">
-                            <button type="submit">Send</button>
-                        </div>
-                    </div>
-                </form>
+
         </section>
         </footer>
 
